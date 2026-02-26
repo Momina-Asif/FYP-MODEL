@@ -1,0 +1,18 @@
+# Python virtual environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# ML models
+*.pt
+*.pth
+*.ckpt
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
