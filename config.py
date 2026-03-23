@@ -1,11 +1,13 @@
+import torch
+
 IMG_SIZE = 256
 VOCAB_SIZE = 1000
 EMBED_DIM = 128
-DEVICE = "cuda"
 
-# config.py
+# Auto-detect device - use CUDA if available, otherwise CPU
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
-IMAGE_SIZE = 1024
+IMAGE_SIZE = 512
 
 NUM_BOXES = 10
 
